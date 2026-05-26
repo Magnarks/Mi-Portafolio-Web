@@ -53,9 +53,9 @@
                 dots: true,
                 items: 3,
                 margin: 30,
-                autoplay: false,
+                autoplay: true,
                 smartSpeed: 700,
-                autoplayTimeout: 6000,
+                autoplayTimeout: 4000,
                 responsive: {
                     0: {
                         items: 1,
@@ -81,11 +81,11 @@
                 loop: true,
                 nav: false,
                 dots: true,
-                items: 3,
+                items: 10,
                 margin: 30,
-                autoplay: false,
+                autoplay: true,
                 smartSpeed: 700,
-                autoplayTimeout: 6000,
+                autoplayTimeout: 4000,
                 responsive: {
                     0: {
                         items: 1,
@@ -108,7 +108,7 @@
         }
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
-                loop: false,
+                loop: true,
                 nav: false,
                 dots: true,
                 items: 8,
