@@ -108,7 +108,7 @@
         }
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
-                loop: false,
+                loop: true,
                 nav: false,
                 dots: true,
                 items: 3,
@@ -155,7 +155,7 @@
         if ($('.fullpage-default').length) {
             var myFullpage = new fullpage('.fullpage-default', {
                 licenseKey: ' C7F41B00-5E824594-9A5EFB99-B556A3D5',
-                anchors: ['slide01', 'slide02', 'slide03', 'slide04', 'slide05', 'slide06', 'slide07'],
+                anchors: ['slide01', 'slide02', 'slide03', 'slide04', 'slide05', 'slide06'],
                 menu: '#nav',
                 lazyLoad: true,
                 navigation: true,
@@ -163,9 +163,22 @@
                 scrollOverflow: true,
                 responsiveWidth: 768,
                 responsiveHeight: 600,
-                responsiveSlides: true
+                responsiveSlides: true,
+                normalizeMouseEvents: true
             });
         }
+        // Manejar clics en enlaces externos para asegurar que abran correctamente
+        document.addEventListener('click', function(e) {
+            var linkElement = e.target.closest('a[target="_blank"]');
+            if (linkElement && linkElement.href) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                window.open(linkElement.href, '_blank');
+                return false;
+            }
+        }, true);
+
         $(document).on('click', '.navbar-toggle', function() {
             $('.navbar-collapse').slideToggle(300);
             return false;

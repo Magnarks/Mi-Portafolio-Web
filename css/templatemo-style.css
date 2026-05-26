@@ -68,10 +68,22 @@ html {
   background-color: #1e1e1e;
   border-radius: 10px;
   padding: 0.50rem 0.25rem;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  margin: 5px 5px;
+}
+#fc-bt2:hover {
+  opacity: 0.8;
+}
+#fc-bt2 svg {
+  pointer-events: auto;
+  cursor: pointer;
 }
 a {
   color: #fff;
   text-decoration: none;
+  pointer-events: auto;
 }
 a:hover,
 a:focus {
