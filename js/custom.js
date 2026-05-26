@@ -187,6 +187,13 @@
         }).on('click', '.next-section', function() {
             fullpage_api.moveSectionDown();
         });
+        
+        // Pausar carruseles cuando el mouse está sobre ellos
+        $('.gallery-list, .facts-list, .services-list, .testimonials-slider').on('mouseenter', function() {
+            $(this).trigger('stop.owl.autoplay');
+        }).on('mouseleave', function() {
+            $(this).trigger('play.owl.autoplay');
+        });
         $('.facts-row').on('inview', function(event, isInView) {
             $('.count-number').each(function() {
                 $(this).prop('Counter', 0).animate({
