@@ -111,7 +111,7 @@
                 loop: true,
                 nav: false,
                 dots: true,
-                items: 8,
+                items: 10,
                 autoplay: true,
                 smartSpeed: 700,
                 autoplayTimeout: 4000,
