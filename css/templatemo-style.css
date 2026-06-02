@@ -376,6 +376,46 @@ a#logo {
   display:block;
 }
 
+.language-selector {
+  position: fixed;
+  left: 130px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-btn {
+  padding: 6px 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn.active {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .language-selector {
+    gap: 5px;
+  }
+
+  .lang-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+}
+
 /*==============================================
 03. SOCIAL ICONS CSS
 ================================================*/

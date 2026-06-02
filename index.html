@@ -60,9 +60,14 @@ https://templatemo.com/tm-528-elegance
               rel="noopener noreferrer"
               id="logo"
               title="Elegance by TemplateMo"
+              data-i18n="nav.start"
             >
               Inicio
             </a>
+            <div class="language-selector">
+              <button class="lang-btn" data-lang="es">ES</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
             <div class="navigation-row">
               <nav id="navigation">
                 <button type="button" class="navbar-toggle">
@@ -72,25 +77,28 @@ https://templatemo.com/tm-528-elegance
                   <ul class="navigation-menu nav navbar-nav navbars" id="nav">
                     <li data-menuanchor="slide01" class="active">
                       <a
+                        id="cv-download"
                         href="cv/Currículum Vitae Detallado - Diego Alejandro Gutierrez Torres.pdf"
                         target="_blank"
-                        >Descargar mi CV</a
+                        data-cv-es="cv/Currículum Vitae Detallado - Diego Alejandro Gutierrez Torres.pdf"
+                        data-cv-en="cv/Detailed Curriculum Vitae - Diego Alejandro Gutierrez Torres.pdf"
+                        data-i18n="nav.downloadCV">Descargar mi CV</a
                       >
                     </li>
                     <li data-menuanchor="slide02">
-                      <a href="#slide02">Sobre mi</a>
+                      <a href="#slide02" data-i18n="nav.about">Sobre mi</a>
                     </li>
                     <li data-menuanchor="slide03">
-                      <a href="#slide03">Mis Habilidades</a>
+                      <a href="#slide03" data-i18n="nav.skills">Mis Habilidades</a>
                     </li>
                     <li data-menuanchor="slide04">
-                      <a href="#slide04">Mis Proyectos</a>
+                      <a href="#slide04" data-i18n="nav.projects">Mis Proyectos</a>
                     </li>
                     <li data-menuanchor="slide05">
-                      <a href="#slide05">Proyectos en el campo laboral</a>
+                      <a href="#slide05" data-i18n="nav.workProjects">Proyectos en el campo laboral</a>
                     </li>
                     <li data-menuanchor="slide06">
-                      <a href="#slide06">Contactame</a>
+                      <a href="#slide06" data-i18n="nav.contact">Contactame</a>
                     </li>
                   </ul>
                 </div>
@@ -114,7 +122,7 @@ https://templatemo.com/tm-528-elegance
               <h1 class="welcome-title animate" data-animate="fadeInUp">
                 Mi Portafolio
               </h1>
-              <p class="animate" data-animate="fadeInUp">
+              <p class="animate" data-animate="fadeInUp" data-i18n="hero.description">
                 Aqui podras encontrar mi información, ver mis proyectos, mi
                 experencia y me podras contactar
               </p>
@@ -139,14 +147,19 @@ https://templatemo.com/tm-528-elegance
                     <div class="col-md-6">
                       <div class="about-contentbox">
                         <div class="animate" data-animate="fadeInUp">
-                          <span>Sobre mi</span>
-                          <h2>¿Quién soy yo?</h2>
-                          <p>
+                          <span data-i18n="about.title">Sobre mi</span>
+                          <h2 data-i18n="about.question">¿Quién soy yo?</h2>
+                          <p data-i18n-html="about.description">
                             Mi nombre es
                             <strong>Diego Gutierrez Torres</strong> y soy
                             <strong> Desarrollador</strong> en areas como el
                             Backend, pero tambien en el area de
                             <strong> Inteligencia Artificial. </strong>
+                          </p>
+                          <p data-i18n-html="about.bio">
+                            Soy un desarrollador apasionado por la tecnología y la innovación. 
+                            Me encanta resolver problemas complejos y crear soluciones elegantes. 
+                            Tengo experiencia en desarrollo web, aplicaciones móviles y IA.
                           </p>
                         </div>
                         <div class="facts-list owl-carousel">
@@ -156,7 +169,7 @@ https://templatemo.com/tm-528-elegance
                                 class="fa fa-trophy counter-icon"
                                 aria-hidden="true"
                               ></i
-                              ><span class="count-number">+5</span> Proyectos
+                              ><span class="count-number">+5</span> <p data-i18n="about.projects">Proyectos</p>
                             </div>
                           </div>
                           <div class="item animate" data-animate="fadeInUp">
@@ -165,7 +178,7 @@ https://templatemo.com/tm-528-elegance
                                 class="fa fa-graduation-cap counter-icon"
                                 aria-hidden="true"
                               ></i
-                              ><span class="count-number">+6</span> Cursos
+                              ><span class="count-number">+6</span> <p data-i18n="about.courses">Cursos</p>
                             </div>
                           </div>
                           <div class="item animate" data-animate="fadeInUp">
@@ -174,8 +187,7 @@ https://templatemo.com/tm-528-elegance
                                 class="fa fa-desktop counter-icon"
                                 aria-hidden="true"
                               ></i
-                              ><span class="count-number">+3</span> Años
-                              Desarrollando
+                              ><span class="count-number">+3</span> <p data-i18n="about.years">Años Desarrollando</p>                              
                             </div>
                           </div>
                           <div class="item animate" data-animate="fadeInUp">
@@ -184,8 +196,7 @@ https://templatemo.com/tm-528-elegance
                                 class="fa fa-support counter-icon"
                                 aria-hidden="true"
                               ></i
-                              ><span class="count-number">1</span> Equipo como
-                              Scrum Master
+                              ><span class="count-number">1</span> <p data-i18n="about.team">Equipo como Scrum Master</p> 
                             </div>
                           </div>
                           <div class="item animate" data-animate="fadeInUp">
@@ -195,7 +206,7 @@ https://templatemo.com/tm-528-elegance
                                 aria-hidden="true"
                               ></i
                               ><span class="count-number">+10</span>
-                              Certificaciones
+                              <p data-i18n="about.certifications">Certificaciones</p>
                             </div>
                           </div>
                         </div>
@@ -222,8 +233,8 @@ https://templatemo.com/tm-528-elegance
             <div class="row justify-content-center">
               <div class="col-md-8 wide-col-laptop">
                 <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Mis Habilidades</span>
-                  <h2>¿Que se hacer?</h2>
+                  <span data-i18n="skills.title">Mis Habilidades</span>
+                  <h2 data-i18n="skills.subtitle">¿Que se hacer?</h2>
                 </div>
                 <div class="services-section">
                   <div class="services-list owl-carousel">
@@ -233,7 +244,7 @@ https://templatemo.com/tm-528-elegance
                           ><i class="fa-brands fa-python" aria-hidden="true"></i
                         ></span>
                         <h3>Python</h3>
-                        <p>
+                        <p data-i18n="skills.pythonDesc">
                           El lenguaje de programación que mas domino, lo he
                           usado para desarrollo web con flask y django. Tambien
                           para Machine-Learning. Uso librerias como Selenium,
@@ -250,7 +261,7 @@ https://templatemo.com/tm-528-elegance
                           ></i
                         ></span>
                         <h3>JavaScript</h3>
-                        <p>
+                        <p data-i18n="skills.javascriptDesc">
                           Lenguaje con el que actualmente trabajo y tambien con
                           el framework de AngularJS
                         </p>
@@ -262,9 +273,11 @@ https://templatemo.com/tm-528-elegance
                           ><i class="fa-brands fa-php" aria-hidden="true"></i
                         ></span>
                         <h3>PHP</h3>
-                        <p>
-                          Tambien trabajo con el actualmente. para las visas de
-                          un proyecto
+                        <p data-i18n="skills.phpDesc">
+                          Tambien trabajo con el actualmente. para las vistas de
+                          un proyecto, como complemento a JavaScript en el frontend. 
+                          Y para el backend para generar informes de excel con PhpSpreadsheet y PDF con DOMPDF.
+                          Crear ApIs REST, y Asi mismo para consumir APIs REST con cURL.
                         </p>
                       </div>
                     </div>
@@ -277,10 +290,8 @@ https://templatemo.com/tm-528-elegance
                           ></i
                         ></span>
                         <h3>C#</h3>
-                        <p>
-                          Lenguaje que vi para estructura de datos en la
-                          universidad y aprendí tambien interfaces gráficas con
-                          este.
+                        <p data-i18n="skills.csharpDesc">
+                          Lenguaje que vi para estructura de datos en la universidad y aprendí tambien interfaces gráficas con Windows Forms
                         </p>
                       </div>
                     </div>
@@ -290,7 +301,7 @@ https://templatemo.com/tm-528-elegance
                           ><i class="fa-brands fa-java" aria-hidden="true"></i
                         ></span>
                         <h3>Java</h3>
-                        <p>
+                        <p data-i18n="skills.javaDesc">
                           Java lo vi hace mucho, pero lo retome hace poco para
                           un curso de desarrollo web, donde use SpringBoot,
                           Maven y Eclipse.
@@ -302,8 +313,8 @@ https://templatemo.com/tm-528-elegance
                         <span class="service-icon"
                           ><i class="fa fa-microchip" aria-hidden="true"></i
                         ></span>
-                        <h3>Inteligencia Artificial</h3>
-                        <p>
+                        <h3 data-i18n="skills.ai">Inteligencia Artificial</h3>
+                        <p data-i18n="skills.aiDesc">
                           Una de mis areas favoritas, he realizado proyectos de
                           Machine-Learning y visión por computadora.
                         </p>
@@ -315,9 +326,8 @@ https://templatemo.com/tm-528-elegance
                           ><i class="fa fa-html5" aria-hidden="true"></i
                         ></span>
                         <h3>HTML5</h3>
-                        <p>
-                          El clasico HTML5 que se tiene que usar para desarrollo
-                          web, lo he aprendido a medida que lo uso.
+                        <p data-i18n="skills.html5Desc">
+                          HTML5 es el lenguaje de marcado que utilizo para estructurar el contenido de mis páginas web.
                         </p>
                       </div>
                     </div>
@@ -327,9 +337,8 @@ https://templatemo.com/tm-528-elegance
                           ><i class="fa fa-css3" aria-hidden="true"></i
                         ></span>
                         <h3>CSS3</h3>
-                        <p>
-                          El complemento a HTML5, es muy util para hacer paginas
-                          web muy dinamicas y estilizadas.
+                        <p data-i18n="skills.css3Desc">
+                          CSS3 es el lenguaje de estilos que utilizo para diseñar y dar formato a mis páginas web, creando interfaces atractivas y responsivas.
                         </p>
                       </div>
                     </div>
@@ -339,7 +348,7 @@ https://templatemo.com/tm-528-elegance
                           ><i class="fa fa-git" aria-hidden="true"></i
                         ></span>
                         <h3>Git</h3>
-                        <p>
+                        <p data-i18n="skills.gitDesc">
                           El control de versiones GIT, tambien lo aprendí en la
                           universidad y me ah sido util al desarrollar.
                         </p>
@@ -350,11 +359,10 @@ https://templatemo.com/tm-528-elegance
                         <span class="service-icon"
                           ><i class="fa fa-database" aria-hidden="true"></i
                         ></span>
-                        <h3>Bases de Datos</h3>
-                        <p>
-                          En bases de datos eh usado SQLite3 y PostgreSQL,
-                          actualmente trabajo con MySQL, Firebase Realtime
-                          Database y MongoDB.
+                        <h3 data-i18n="skills.databases">Bases de Datos</h3>
+                        <p data-i18n="skills.databasesDesc">
+                          Tengo experiencia trabajando con bases de datos relacionales como MySQL y SQLite3, así como con bases de datos NoSQL como Firebase Realtime Database y MongoDB. 
+                          He utilizado estas tecnologías para almacenar y gestionar datos de manera eficiente en mis proyectos.
                         </p>
                       </div>
                     </div>
@@ -370,8 +378,8 @@ https://templatemo.com/tm-528-elegance
             <div class="row justify-content-center">
               <div class="col-md-8 wide-col-laptop">
                 <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Mis Proyectos</span>
-                  <h2>¿Que yo he hecho?</h2>
+                  <span data-i18n="projects.title">Mis Proyectos</span>
+                  <h2 data-i18n="projects.subtitle">¿Que yo he hecho?</h2>
                 </div>
                 <div class="gallery-section">
                   <div class="gallery-list owl-carousel">
@@ -384,10 +392,10 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>
+                          <h4 data-i18n="projects.agentes">
                             Agentes de IA
                           </h4>
-                          <p>
+                          <p data-i18n="projects.agentesDesc">
                             Desarrollo de agentes inteligentes usando Python y 
                             modelos de IA locales, con LangChain o OpenAI desplegados en
                             entornos web con Flask o FastAPI.
@@ -411,10 +419,10 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>
+                          <h4 data-i18n="projects.clasificador">
                             Clasificador de Imagenes usando Machine-Learning
                           </h4>
-                          <p>
+                          <p data-i18n="projects.clasificadorDesc">
                             Clasificador de imagenes hecho con Python usando
                             sklearn y skimage, desplegado en aplicación web con
                             Flask en render.
@@ -434,8 +442,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Descargador de videos de YouTube</h4>
-                          <p>
+                          <h4 data-i18n="projects.descargador">Descargador de videos de YouTube</h4>
+                          <p data-i18n="projects.descargadorDesc">
                             Un programa realizado en Python usando la libreria
                             pytube, zipfile y Flask.
                           </p>
@@ -454,8 +462,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Bot con Selenium que compara imagenes</h4>
-                          <p>
+                          <h4 data-i18n="projects.bot">Bot con Selenium que compara imagenes</h4>
+                          <p data-i18n="projects.botDesc">
                             Bot hecho con Selenium, Python, Opencv y Skimage,
                             que busca una imagen en el sitio y halla las
                             diferencias
@@ -475,8 +483,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Asistente de Voz</h4>
-                          <p>
+                          <h4 data-i18n="projects.asistente">Asistente de Voz</h4>
+                          <p data-i18n="projects.asistenteDesc">
                             Un asistente de voz creado en Python usando varias
                             librerias, incluida pyttsx3, speech_recognition y
                             demás para crear un asistente similar a Siri o
@@ -496,8 +504,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Convertidor Texto a Voz y Visceversa</h4>
-                          <p>
+                          <h4 data-i18n="projects.convertidor">Convertidor Texto a Voz y Visceversa</h4>
+                          <p data-i18n="projects.convertidorDesc">
                             Pequeño script en Python que usando la api de gtts y
                             speech-recognition puede convertir el texto y
                             leerlo, además tambien tiene la opción de hacer lo
@@ -517,8 +525,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Aplicador de Filtros</h4>
-                          <p>
+                          <h4 data-i18n="projects.filtros">Aplicador de Filtros</h4>
+                          <p data-i18n="projects.filtrosDesc">
                             Este es un programa que puede aplicar diversos
                             filtros a imagenes desde dibujo hasta fusion de
                             imagenes en tiempo real usando opencv.
@@ -538,8 +546,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Proyecto luces con sensor de luz en Java y Arduino</h4>
-                          <p>
+                          <h4 data-i18n="projects.luces">Proyecto luces con sensor de luz en Java y Arduino</h4>
+                          <p data-i18n="projects.lucesDesc">
                             Proyecto que controla luces mediante un sensor de luz las cuales se encienden o apagan según la cantidad de luz ambiente, desarrollado en Java y Arduino.
                           </p>
                           <br />
@@ -556,8 +564,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Trabajo de la universidad en Java aplicando POO</h4>
-                          <p>
+                          <h4 data-i18n="projects.javaPoo">Trabajo de la universidad en Java aplicando POO</h4>
+                          <p data-i18n="projects.javaPooDesc">
                             Proyecto hecho en Java para la universidad, donde se aplican conceptos de Programación Orientada a Objetos (POO) para desarrollar una aplicación funcional.
                           </p>
                           <br />
@@ -577,8 +585,8 @@ https://templatemo.com/tm-528-elegance
             <div class="row justify-content-center">
               <div class="col-md-8 wide-col-laptop">
                 <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Proyectos en el campo laboral</span>
-                  <h2>¿Que yo he hecho?</h2>
+                  <span data-i18n="workProjects.title">Proyectos en el campo laboral</span>
+                  <h2 data-i18n="workProjects.subtitle">¿Que yo he hecho?</h2>
                 </div>
                 <div class="gallery-section">
                   <div class="gallery-list owl-carousel">
@@ -591,8 +599,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Software de Telemedicina</h4>
-                          <p>
+                          <h4 data-i18n="workProjects.telemedicina">Software de Telemedicina</h4>
+                          <p data-i18n="workProjects.telemedicinaDesc">
                             Software de telemedicina desarrollado en
                             Python-Django, ReactJS y Redis, que permite la
                             consulta médica a distancia.
@@ -611,10 +619,10 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>
+                          <h4 data-i18n="workProjects.ambulancia">
                             URL para seguimiento de ambulancias en tiempo real
                           </h4>
-                          <p>
+                          <p data-i18n="workProjects.ambulanciaDesc">
                             Un programa realizado en Python-Flask, ReactJS,
                             Here-Maps, y Socket.IO, que permite el seguimiento
                             de ambulancias en tiempo real.
@@ -635,11 +643,11 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>
+                          <h4 data-i18n="workProjects.facial">
                             Sistema de reconocimiento facial para inicio de
                             sesión
                           </h4>
-                          <p>
+                          <p data-i18n="workProjects.facialDesc">
                             Software de reconocimiento facial para inicio de
                             sesión en aplicaciones web.
                           </p>
@@ -657,8 +665,8 @@ https://templatemo.com/tm-528-elegance
                           class="thumb-inner animate"
                           data-animate="fadeInUp"
                         >
-                          <h4>Visor Web RDA</h4>
-                          <p>
+                          <h4 data-i18n="workProjects.rda">Visor Web RDA</h4>
+                          <p data-i18n="workProjects.rdaDesc">
                             Software para consultar el Resumen Digital de
                             Atención (RDA) en Colombia según Resolución 1888 de
                             2025. Esta aplicación permite a los usuarios acceder
@@ -686,8 +694,8 @@ https://templatemo.com/tm-528-elegance
             <div class="row justify-content-center">
               <div class="col-md-7 wide-col-laptop">
                 <div class="title-block animate" data-animate="fadeInUp">
-                  <span>Contactame</span>
-                  <h2>¡En un solo toque!</h2>
+                  <span data-i18n="contact.title">Contactame</span>
+                  <h2 data-i18n="contact.subtitle">¡En un solo toque!</h2>
                 </div>
                 <div class="contact-section">
                   <div class="row">
@@ -708,7 +716,7 @@ https://templatemo.com/tm-528-elegance
                             name="name"
                             id="name"
                             required
-                            placeholder="Nombre"
+                            placeholder="Nombre/Name"
                           />
                         </div>
                         <div class="input-field">
@@ -727,10 +735,10 @@ https://templatemo.com/tm-528-elegance
                             name="message"
                             id="message"
                             required
-                            placeholder="Mensaje"
+                            placeholder="Mensaje/Message"
                           ></textarea>
                         </div>
-                        <button class="btn" type="submit">Enviar</button>
+                        <button class="btn" type="submit" data-i18n="contact.send">Enviar</button>
                       </form>
                       <div id="form-messages" class="mt-3"></div>
                     </div>
@@ -751,7 +759,7 @@ https://templatemo.com/tm-528-elegance
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Facebook"
-                ><i class="fa fa-facebook"></i
+                ><i class="fa-brands fa-facebook"></i
               ></a>
             </li>
             <li>
@@ -760,7 +768,7 @@ https://templatemo.com/tm-528-elegance
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Twitter"
-                ><i class="fa fa-twitter"></i
+                ><i class="fa-brands fa-x-twitter"></i
               ></a>
             </li>
             <li>
@@ -769,7 +777,7 @@ https://templatemo.com/tm-528-elegance
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Linkedin"
-                ><i class="fa fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin"></i
               ></a>
             </li>
             <li>
@@ -778,7 +786,7 @@ https://templatemo.com/tm-528-elegance
                 target="_blank"
                 rel="noopener noreferrer"
                 title="GitHub"
-                ><i class="fa fa-github"></i
+                ><i class="fa-brands fa-github"></i
               ></a>
             </li>
           </ul>
@@ -799,6 +807,8 @@ https://templatemo.com/tm-528-elegance
     <script src="js/jquery.inview.min.js"></script>
 
     <script src="js/form.js"></script>
+
+    <script src="js/i18n.js"></script>
 
     <script src="js/custom.js"></script>
   </body>
