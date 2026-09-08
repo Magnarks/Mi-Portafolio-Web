@@ -48,6 +48,8 @@ const i18n = {
             "projects": {
                 "title": "Mis Proyectos",
                 "subtitle": "¿Que yo he hecho?",
+                "chatbotIA": "Chatbot agentico de WhatsApp con inteligencia artificial",
+                "chatbotIADesc": "Desarrollo de un chatbot con inteligencia artificial para interactuar en WhatsApp. Utilizando OpenWA, llama.cpp y FastAPI. El chatbot tiene capacidad para entender y responder a mensajes de los usuarios de manera inteligente. Puede realizar tareas como consultar en internet, generar imagenes y memes, y mucho más. Entiende audios de voz (propio del modelo de IA) y así mismo responder con mensajes de voz.",
                 "agentes": "Agentes de IA",
                 "agentesDesc": "Desarrollo de agentes inteligentes usando Python y modelos de IA locales, con LangChain o OpenAI desplegados en entornos web con Flask o FastAPI.",
                 "clasificador": "Clasificador de Imagenes usando Machine-Learning",
@@ -140,6 +142,8 @@ const i18n = {
             "projects": {
                 "title": "My Projects",
                 "subtitle": "What have I done?",
+                "chatbotIA": "WhatsApp chatbot with artificial intelligence",
+                "chatbotIADesc": "Development of an AI-powered chatbot for WhatsApp interaction. Using OpenWA, llama.cpp, and FastAPI. The chatbot can intelligently understand and respond to user messages. It can perform tasks such as searching the internet, generating images and memes, and much more. It understands voice audio (a feature of the AI ​​model) and responds with voice messages.",
                 "agentes": "AI Agents",
                 "agentesDesc": "Development of intelligent agents using Python and local AI models, with LangChain or OpenAI deployed in web environments with Flask or FastAPI.",
                 "clasificador": "Image Classifier using Machine-Learning",
