@@ -388,7 +388,7 @@ a#logo {
   padding: 6px 10px;
   border: 2px solid #fff;
   background-color: transparent;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
